@@ -1,0 +1,4 @@
+<!--index.wxml-->
+<view class="map-tab-bar">
+  <button class="map-tab-li" bindtap="getType" data-type="{{item.url}}" wx:for="{{menu}}" wx:key >{{item.title}}</button>
+</view>

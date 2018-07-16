@@ -1,0 +1,9 @@
+<view class="map-inputSearch-input">
+  <input bindinput="bindInput" placeholder="搜索" focus="true" />
+</view>
+<view class="map-search-list {{isShow?'':'map-hide'}}">
+  <cover-view style="background-color: #ffffff" bindtouchstart="bindSearch" wx:key="searchId" data-keywords="{{item.name}}" data-location="{{item.location}}" class="map-box" wx:for="{{tips}}">{{item.name}}</cover-view>
+</view>
+<view class="map_container">
+  <map class="map" latitude="{{latitude}}" longitude="{{longitude}}" markers="{{markers}}"></map>
+</view>

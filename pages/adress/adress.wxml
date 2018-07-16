@@ -1,0 +1,7 @@
+<view class="map_container">
+  <map class="map" longitude="{{longitude}}" latitude="{{latitude}}" include-points="{{points}}" markers="{{markers}}"></map>
+  <view class="map-tab-bar map-foot {{isShow?'':'map-hide'}}">
+      <cover-view class="map-name">{{name}} </cover-view>     
+      <cover-view class="map-address">{{address}}</cover-view>
+  </view>
+</view>
